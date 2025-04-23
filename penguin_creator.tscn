@@ -1,0 +1,89 @@
+[gd_scene load_steps=17 format=3 uid="uid://cvj0vy35b14l5"]
+
+[ext_resource type="Texture2D" uid="uid://0jlyhgnt1fyv" path="res://assets/body.png" id="1_eg6uh"]
+[ext_resource type="Texture2D" uid="uid://n5iffhhtkbu1" path="res://assets/toppers/topper_hat.png" id="2_eai8c"]
+[ext_resource type="Texture2D" uid="uid://57akhkl5uuam" path="res://assets/toppers/topper_cap.png" id="3_qntrd"]
+[ext_resource type="Texture2D" uid="uid://bfcgjk2nk5lg8" path="res://assets/toppers/topper_hair.png" id="4_3fvo7"]
+[ext_resource type="Texture2D" uid="uid://b0appdcba2lrk" path="res://assets/beaks/beak_normal.png" id="5_7nlap"]
+[ext_resource type="Texture2D" uid="uid://cf4f0cuhvc3bh" path="res://assets/beaks/beak_toucan.png" id="6_vngkg"]
+[ext_resource type="Texture2D" uid="uid://bojpd0yi7rcxe" path="res://assets/eyes/eye_angry.png" id="7_6833c"]
+[ext_resource type="Texture2D" uid="uid://vaeu1akraaxh" path="res://assets/eyes/eye_anime.png" id="8_1yqep"]
+[ext_resource type="Texture2D" uid="uid://df8nbwo8lbhe2" path="res://assets/eyes/eye_normal.png" id="9_odxm1"]
+[ext_resource type="Texture2D" uid="uid://brehiqsqje4oh" path="res://assets/face/face_rosy.png" id="10_iqi6b"]
+[ext_resource type="Texture2D" uid="uid://djl6lshrtqnug" path="res://assets/feet/feet_flippers.png" id="11_rnnip"]
+[ext_resource type="Texture2D" uid="uid://dhe1nf4meo20n" path="res://assets/feet/feet_normal.png" id="12_el773"]
+[ext_resource type="Texture2D" uid="uid://ckkweqb1qjxjw" path="res://assets/tails/tail_beaver.png" id="13_vi0cx"]
+[ext_resource type="Texture2D" uid="uid://jaa6ot24p51u" path="res://assets/tails/tail_big.png" id="14_bk32b"]
+[ext_resource type="Texture2D" uid="uid://dpd1e5ppy7xa4" path="res://assets/tails/tail_normal.png" id="15_aje72"]
+[ext_resource type="Texture2D" uid="uid://mv1eqt2ydyxr" path="res://assets/tails/tail_pig.png" id="16_acrg3"]
+
+[node name="penguin_creator" type="Node2D"]
+
+[node name="body" type="Sprite2D" parent="."]
+texture = ExtResource("1_eg6uh")
+
+[node name="toppers" type="Node" parent="body"]
+
+[node name="topper_hat" type="Sprite2D" parent="body/toppers"]
+texture = ExtResource("2_eai8c")
+
+[node name="topper_cap" type="Sprite2D" parent="body/toppers"]
+visible = false
+texture = ExtResource("3_qntrd")
+
+[node name="topper_hair" type="Sprite2D" parent="body/toppers"]
+visible = false
+texture = ExtResource("4_3fvo7")
+
+[node name="beaks" type="Node" parent="body"]
+
+[node name="beak_normal" type="Sprite2D" parent="body/beaks"]
+texture = ExtResource("5_7nlap")
+
+[node name="beak_toucan" type="Sprite2D" parent="body/beaks"]
+visible = false
+texture = ExtResource("6_vngkg")
+
+[node name="eyes" type="Node" parent="body"]
+
+[node name="eye_angry" type="Sprite2D" parent="body/eyes"]
+visible = false
+texture = ExtResource("7_6833c")
+
+[node name="eye_anime" type="Sprite2D" parent="body/eyes"]
+texture = ExtResource("8_1yqep")
+
+[node name="eye_normal" type="Sprite2D" parent="body/eyes"]
+visible = false
+texture = ExtResource("9_odxm1")
+
+[node name="face" type="Node" parent="body"]
+
+[node name="face_rosy" type="Sprite2D" parent="body/face"]
+texture = ExtResource("10_iqi6b")
+
+[node name="feet" type="Node" parent="body"]
+
+[node name="feet_flippers" type="Sprite2D" parent="body/feet"]
+texture = ExtResource("11_rnnip")
+
+[node name="feet_normal" type="Sprite2D" parent="body/feet"]
+visible = false
+texture = ExtResource("12_el773")
+
+[node name="tails" type="Node" parent="body"]
+
+[node name="tail_beaver" type="Sprite2D" parent="body/tails"]
+texture = ExtResource("13_vi0cx")
+
+[node name="tail_big" type="Sprite2D" parent="body/tails"]
+visible = false
+texture = ExtResource("14_bk32b")
+
+[node name="tail_normal" type="Sprite2D" parent="body/tails"]
+visible = false
+texture = ExtResource("15_aje72")
+
+[node name="tail_pig" type="Sprite2D" parent="body/tails"]
+visible = false
+texture = ExtResource("16_acrg3")

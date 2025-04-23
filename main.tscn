@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://dqu3j3smxete7"]
+
+[ext_resource type="Texture2D" uid="uid://b30pqjcv1uxq8" path="res://title_penguino.png" id="1_tt4wu"]
+[ext_resource type="Texture2D" uid="uid://bx7ms1ni6c4lh" path="res://title_party.png" id="2_7bvc0"]
+[ext_resource type="Texture2D" uid="uid://byp2byhs5hwdw" path="res://title_action.png" id="3_n5pwa"]
+
+[sub_resource type="Gradient" id="Gradient_c4ph4"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_i1k26"]
+gradient = SubResource("Gradient_c4ph4")
+fill_from = Vector2(0.5, 1)
+fill_to = Vector2(0.5, 0.8)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(579.5, 321)
+scale = Vector2(18.2969, 10.5)
+texture = SubResource("GradientTexture2D_i1k26")
+
+[node name="TitlePenguino" type="Sprite2D" parent="."]
+position = Vector2(588, 269.75)
+scale = Vector2(0.604265, 0.604265)
+texture = ExtResource("1_tt4wu")
+
+[node name="TitleParty" type="Sprite2D" parent="."]
+position = Vector2(698, 334)
+scale = Vector2(0.399333, 0.399333)
+texture = ExtResource("2_7bvc0")
+
+[node name="TitleAction" type="Sprite2D" parent="."]
+position = Vector2(577, 435)
+scale = Vector2(0.336066, 0.336066)
+texture = ExtResource("3_n5pwa")
