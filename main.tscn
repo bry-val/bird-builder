@@ -4,10 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://bx7ms1ni6c4lh" path="res://title_party.png" id="2_7bvc0"]
 [ext_resource type="Texture2D" uid="uid://byp2byhs5hwdw" path="res://title_action.png" id="3_n5pwa"]
 
-[sub_resource type="Gradient" id="Gradient_c4ph4"]
+[sub_resource type="Gradient" id="Gradient_h2yge"]
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_i1k26"]
-gradient = SubResource("Gradient_c4ph4")
+gradient = SubResource("Gradient_h2yge")
 fill_from = Vector2(0.5, 1)
 fill_to = Vector2(0.5, 0.8)
 
