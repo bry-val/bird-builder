@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://cvj0vy35b14l5"]
+[gd_scene load_steps=40 format=3 uid="uid://cvj0vy35b14l5"]
 
 [ext_resource type="Texture2D" uid="uid://0jlyhgnt1fyv" path="res://assets/body.png" id="1_eg6uh"]
 [ext_resource type="Script" uid="uid://c1flvpdwgopas" path="res://penguin_creator.gd" id="1_xjdgi"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://57akhkl5uuam" path="res://assets/toppers/topper_cap.png" id="3_qntrd"]
 [ext_resource type="Texture2D" uid="uid://bfcgjk2nk5lg8" path="res://assets/toppers/topper_hair.png" id="4_3fvo7"]
 [ext_resource type="Texture2D" uid="uid://b0appdcba2lrk" path="res://assets/beaks/beak_normal.png" id="5_7nlap"]
+[ext_resource type="Texture2D" uid="uid://bd4ll8pku7sby" path="res://assets/toppers/topper_bunny.png" id="5_kosfw"]
 [ext_resource type="Texture2D" uid="uid://cf4f0cuhvc3bh" path="res://assets/beaks/beak_toucan.png" id="6_vngkg"]
 [ext_resource type="Texture2D" uid="uid://bojpd0yi7rcxe" path="res://assets/eyes/eye_angry.png" id="7_6833c"]
 [ext_resource type="Texture2D" uid="uid://vaeu1akraaxh" path="res://assets/eyes/eye_anime.png" id="8_1yqep"]
@@ -62,7 +63,13 @@ texture_filter = 1
 position = Vector2(553, 152)
 texture = ExtResource("2_eai8c")
 
+[node name="topper_bunny" type="Sprite2D" parent="body/toppers"]
+texture_filter = 1
+position = Vector2(553, 152)
+texture = ExtResource("5_kosfw")
+
 [node name="topper_cap" type="Sprite2D" parent="body/toppers"]
+visible = false
 texture_filter = 1
 position = Vector2(595, 161)
 texture = ExtResource("3_qntrd")
@@ -347,6 +354,12 @@ layout_mode = 2
 icon = ExtResource("34_arsrx")
 metadata/category = "toppers"
 metadata/part = "topper_hat"
+
+[node name="topper_bunny" type="Button" parent="UI/TopperSection/TopperGrid" groups=["part_selector_buttons"]]
+layout_mode = 2
+icon = ExtResource("5_kosfw")
+metadata/category = "toppers"
+metadata/part = "topper_bunny"
 
 [node name="topper_none" type="Button" parent="UI/TopperSection/TopperGrid" groups=["part_selector_buttons"]]
 layout_mode = 2
